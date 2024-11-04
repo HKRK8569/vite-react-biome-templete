@@ -1,0 +1,36 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "run-p dev:scss vite",
+    "vite": "vite",
+    "dev:scss": "typed-scss-modules src --watch",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:code": "biome lint ./src",
+    "lint:style": "biome format ./src",
+    "fix:code": "biome lint --apply .src/",
+    "fix:style": "biome format --write ./src",
+    "typegen:scss": "typed-scss-modules src"
+  },
+  "dependencies": {
+    "@types/node": "^22.8.7",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanitize.css": "^13.0.0",
+    "sass": "^1.80.6",
+    "typed-scss-modules": "^8.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  }
+}
