@@ -14,7 +14,9 @@
     "lint:style": "biome format ./src",
     "fix:code": "biome lint --apply .src/",
     "fix:style": "biome format --write ./src",
-    "typegen:scss": "typed-scss-modules src"
+    "typegen:scss": "typed-scss-modules src",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "^22.8.7",
@@ -27,13 +29,22 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@chromatic-com/storybook": "^3.2.2",
     "@playwright/test": "^1.48.2",
+    "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/addon-interactions": "^8.4.2",
+    "@storybook/addon-onboarding": "^8.4.2",
+    "@storybook/blocks": "^8.4.2",
+    "@storybook/react": "^8.4.2",
+    "@storybook/react-vite": "^8.4.2",
+    "@storybook/test": "^8.4.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "globals": "^15.11.0",
+    "storybook": "^8.4.2",
     "typescript": "~5.6.2",
     "vite": "^5.4.10",
     "vitest": "^2.1.4"
