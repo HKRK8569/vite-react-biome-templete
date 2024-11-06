@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "run-p dev:scss vite",
     "vite": "vite",
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "dev:scss": "typed-scss-modules src --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
