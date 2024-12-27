@@ -4,6 +4,8 @@ pre-commit:
       glob: "src/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,css}"
       run: npx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
       stage_fixed: true
+    tsc:
+      run: npm run typecheck
 
 pre-push:
   commands:
@@ -12,3 +14,5 @@ pre-push:
       run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {push_files}
     test:
       run: npm run test
+    tsc:
+      run: npm run typecheck
