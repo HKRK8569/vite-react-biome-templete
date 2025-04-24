@@ -16,6 +16,7 @@
     "lint:style": "biome format",
     "fix:code": "biome lint --apply",
     "fix:style": "biome format --write",
+    "biome:check": "biome check --write",
     "typegen:css": "tcm src",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

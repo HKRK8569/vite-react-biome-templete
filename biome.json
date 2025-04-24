@@ -7,7 +7,13 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["tsconfig.node.json", "tsconfig.app.json"]
+    "ignore": [
+      "tsconfig.node.json",
+      "tsconfig.app.json",
+      "package.json",
+      "package-lock.json",
+      ".vscode"
+    ]
   },
   "formatter": {
     "enabled": true,
