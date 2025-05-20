@@ -20,7 +20,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@types/node": "22.15.18",
+    "@types/node": "22.15.19",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "sanitize.css": "13.0.0"
