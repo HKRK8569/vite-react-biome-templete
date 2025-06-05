@@ -51,7 +51,7 @@
     "typescript": "5.8.3",
     "vite": "6.3.5",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.2.0"
+    "vitest": "3.2.2"
   },
   "volta": {
     "node": "22.15.1",
