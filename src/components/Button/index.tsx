@@ -1,8 +1,6 @@
-import styles from "./index.module.css";
-
 const Button = () => {
   return (
-    <button type="button" className={styles.button}>
+    <button type="button" className="bg-[#ff0000]">
       ボタン
     </button>
   );
