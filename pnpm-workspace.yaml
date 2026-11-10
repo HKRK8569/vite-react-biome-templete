@@ -1,0 +1,9 @@
+minimumReleaseAge: 4320
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+
+allowBuilds:
+  "@swc/core": true
+  esbuild: true
+  lefthook: true
+  msw: true

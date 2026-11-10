@@ -2,17 +2,17 @@ pre-commit:
   commands:
     biome:
       glob: "src/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,css}"
-      run: npm run biome:check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      run: pnpm run biome:check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
       stage_fixed: true
     tsc:
-      run: npm run typecheck
+      run: pnpm run typecheck
 
 pre-push:
   commands:
     biome:
       glob: "src/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsxc,css}"
-      run: npm run biome:check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {push_files}
+      run: pnpm run biome:check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {push_files}
     test:
-      run: npm run test
+      run: pnpm run test
     tsc:
-      run: npm run typecheck
+      run: pnpm run typecheck
