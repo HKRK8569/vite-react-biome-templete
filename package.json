@@ -41,7 +41,7 @@
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react-swc": "4.3.3",
     "happy-dom": "21.0.4",
-    "lefthook": "1.13.6",
+    "lefthook": "2.2.2",
     "msw": "2.15.0",
     "storybook": "10.6.7",
     "tailwindcss": "4.3.5",
